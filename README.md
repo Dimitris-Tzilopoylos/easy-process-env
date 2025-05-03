@@ -53,12 +53,3 @@ Parses the variable as an integer, returns default if not a number.
 ### `envFloat(key: string, defaultValue?: number): number | undefined`
 
 Parses the variable as a float, returns default if not a number.
-
-## 📁 Example `.env`
-
-```
-DB_HOST=3000
-DEBUG_MODE=true
-MAX_USERS=50
-TIMEOUT_SECONDS=2.5
-```
