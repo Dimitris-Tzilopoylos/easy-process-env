@@ -1,16 +1,12 @@
-````markdown
 # easy-process-env
 
-A lightweight wrapper around `dotenv` for safely and conveniently accessing environment variables in Node.js
+A lightweight TypeScript wrapper around [`dotenv`](https://www.npmjs.com/package/dotenv) for safely accessing and converting environment variables in Node.js.
 
 ## 📦 Installation
 
 ```bash
 npm install easy-process-env
-# or if you're using yarn
-yarn add easy-process-env
 ```
-````
 
 ## 🚀 Usage
 
