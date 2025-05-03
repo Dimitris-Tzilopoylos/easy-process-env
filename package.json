@@ -1,6 +1,6 @@
 {
   "name": "easy-process-env",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Helper class for env variables",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -9,7 +9,10 @@
     "build": "tsup src/index.ts --format esm,cjs --dts",
     "dev": "tsup src/index.ts --watch"
   },
-  "keywords": [],
+  "keywords": [
+    "env",
+    ".env"
+  ],
   "author": "Dimitrios Tzilopoylos",
   "license": "ISC",
   "dependencies": {

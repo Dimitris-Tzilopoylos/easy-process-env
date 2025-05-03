@@ -57,7 +57,7 @@ Parses the variable as a float, returns default if not a number.
 ## 📁 Example `.env`
 
 ```
-PORT=3000
+DB_HOST=3000
 DEBUG_MODE=true
 MAX_USERS=50
 TIMEOUT_SECONDS=2.5
