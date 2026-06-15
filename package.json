@@ -1,6 +1,6 @@
 {
   "name": "easy-process-env",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Helper class for env variables",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

@@ -3,10 +3,9 @@ import dotenv from "dotenv";
 var EasyEnvironment = class {
   constructor(options) {
     this.options = options;
-    const { error } = dotenv.config(this.options);
-    if (error) {
-      throw error;
-    }
+    const { error, parsed } = dotenv.config(this.options);
+    this.error = error;
+    this.parsed = parsed || {};
   }
   env(key, defaultValue) {
     const value = process.env[key];

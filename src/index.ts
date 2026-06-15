@@ -1,14 +1,15 @@
-import dotenv, { DotenvConfigOptions } from "dotenv";
+import dotenv, { DotenvConfigOptions, DotenvParseOutput } from "dotenv";
 
 export default class EasyEnvironment {
   options?: DotenvConfigOptions;
+  error?: Error | undefined;
+  parsed: DotenvParseOutput;
 
   constructor(options?: DotenvConfigOptions) {
     this.options = options;
-    const { error } = dotenv.config(this.options);
-    if (error) {
-      throw error;
-    }
+    const { error, parsed } = dotenv.config(this.options);
+    this.error = error;
+    this.parsed = parsed || {};
   }
 
   env(key: string, defaultValue?: any) {

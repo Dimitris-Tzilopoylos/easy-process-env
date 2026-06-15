@@ -37,10 +37,9 @@ var import_dotenv = __toESM(require("dotenv"));
 var EasyEnvironment = class {
   constructor(options) {
     this.options = options;
-    const { error } = import_dotenv.default.config(this.options);
-    if (error) {
-      throw error;
-    }
+    const { error, parsed } = import_dotenv.default.config(this.options);
+    this.error = error;
+    this.parsed = parsed || {};
   }
   env(key, defaultValue) {
     const value = process.env[key];
